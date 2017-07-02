@@ -1,6 +1,6 @@
 # CryptoMate - crypto currency prices and information
 
-##Description
+## Description
 This Amazon Alexa Skill is able to provide you the current price of over 900+ crypto currencies.
 All the price information is pulled from [CoinMarketCap.com](http://coinmarketcap.com) REST API.
 
