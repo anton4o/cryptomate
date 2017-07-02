@@ -10,7 +10,7 @@ public class CryptoMateUtilsTest extends TestCase {
 
         assertEquals("bitcoin", CryptoMateUtils.getCurrencyName("Bitcoin"));
 
-        assertEquals("ethereum classic", CryptoMateUtils.getCurrencyName("ethereum classic"));
+        assertEquals("ethereum-classic", CryptoMateUtils.getCurrencyName("ethereum classic"));
 
         assertEquals(null, CryptoMateUtils.getCurrencyName(""));
     }

@@ -7,6 +7,14 @@ public class CryptoMateUtils {
             return null;
         }
 
-        return ccyInput.toLowerCase();
+        String validCcy;
+
+        if (ccyInput.contains(" ")) {
+            validCcy = ccyInput.replaceAll("\\s", "-");
+        } else {
+            validCcy = ccyInput;
+        }
+
+        return validCcy.toLowerCase();
     }
 }
