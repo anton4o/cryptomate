@@ -1,0 +1,8 @@
+CryptoMatePriceIntent what is the price of {CurrencyName}
+CryptoMatePriceIntent how much is {CurrencyName}
+CryptoMatePriceIntent what is {CurrencyName} like
+CryptoMatePriceIntent give me the price of {CurrencyName}
+CryptoMatePriceIntent price of {CurrencyName}
+CryptoMatePriceIntent {CurrencyName} price
+CryptoMatePriceIntent {CurrencyName}
+CryptoMatePriceIntent how much does {CurrencyName} cost

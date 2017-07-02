@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "CryptoMatePriceIntent",
+      "slots": [
+        {
+          "name": "CurrencyName",
+          "type": "LIST_OF_CURRENCIES"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
