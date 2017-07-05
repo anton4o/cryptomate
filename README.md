@@ -1,15 +1,11 @@
 # CryptoMate - crypto currency prices and information
 
 ## Description
-This Amazon Alexa Skill is able to provide you the current price of over 900+ crypto currencies.
+This Amazon Alexa Skill is able to provide you the current price of over 450+ crypto currencies.
 All the price information is pulled from [CoinMarketCap.com](http://coinmarketcap.com) REST API.
 
 ## Usage
-    User: "Alexa, ask crypto mate what is the price of bitcoin"
     User: "Alexa, ask crypto mate how much is bitcoin"
-    User: "Alexa, ask crypto mate what is bitcoin like"
-    User: "Alexa, ask crypto mate to give me the price of bitcoin"
-    User: "Alexa, ask crypto mate how much does bitcoin cost"
     User: "Alexa, ask crypto mate the price of bitcoin"
     User: "Alexa, ask crypto mate bitcoin price"
     User: "Alexa, ask crypto mate bitcoin"
@@ -29,926 +25,448 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - stratis
 - bitshares
 - zcash
-- bytecoin
 - antshares
+- bytecoin
 - golem
 - steem
 - waves
-- siacoin
-- bitconnect
 - gnosis
+- bitconnect
+- siacoin
 - iconomi
 - augur
 - lisk
 - dogecoin
-- stellar lumens
 - tether
 - byteball
 - factom
-- maidsafecoin
 - gamecredits
-- veritaseum
 - ardor
-- decred
-- digixdao
 - komodo
 - status
 - digibyte
-- nxt
-- pivx
-- basic attention token
 - bancor
 - firstblood
-- singulardtv
 - mobilego
 - mcap
 - bitcoindark
-- funfair
 - syscoin
+- funfair
 - aragon
-- lykke
 - peercoin
-- numeraire
 - ubiq
 - emercoin
 - leocoin
 - ark
 - round
-- asch
 - nexus
 - edgeless
-- reddcoin
-- iexec rlc
-- melon
+- asch
 - cloakcoin
+- melon
 - peerplays
-- lbry credits
 - verge
 - namecoin
-- quantum resistant ledger
-- etheroll
 - synereo
+- etheroll
 - monacoin
 - wings
-- vslice
 - obits
-- gulden
-- storjcoin x
-- bitbay
 - elastic
+- gulden
+- bitbay
 - counterparty
-- agoras tokens
-- xaurum
-- blackcoin
 - viacoin
+- blackcoin
 - zcoin
 - burst
-- humaniq
 - omni
 - mysterium
 - vertcoin
 - blocknet
-- storj
 - tokencard
-- ybcoin
-- earthcoin
 - quantum
-- cofound.it
+- earthcoin
 - gridcoin
-- nav coin
 - supernet
-- wetrust
-- zrcoin
 - potcoin
-- e-dinar coin
-- patientory
-- luckchain
-- taas
 - dubaicoin
-- expanse
+- luckchain
 - crown
+- expanse
 - quark
-- skycoin
-- i/o coin
-- bcap
-- worldcoin
-- neoscoin
-- swarm city
 - mooncoin
-- shift
+- skycoin
+- neoscoin
+- worldcoin
 - radium
-- databits
-- unity ingot
-- matchpool
-- energycoin
-- novacoin
+- shift
 - nexium
+- energycoin
+- matchpool
+- novacoin
+- databits
 - digitalnote
-- salus
 - monetaryunit
 - chronobank
+- heat
 - infinitecoin
 - faircoin
 - voxels
-- heat
-- vericoin
-- e-coin
 - sibcoin
+- salus
+- vericoin
 - feathercoin
-- dnotes
 - firstcoin
-- lomocoin
+- einsteinium
 - primecoin
+- lomocoin
+- zrcoin
 - cryptonite
 - bitcny
 - clams
-- mergecoin
 - golos
-- bitcoin plus
-- einsteinium
-- xtrabytes
+- mergecoin
 - bitcrystals
-- foldingcoin
+- bitcoin plus
 - rubycoin
-- pluton
-- vpncoin
-- spreadcoin
 - ion
+- pluton
+- spreadcoin
 - espers
-- pepe cash
-- sphere
+- groestlcoin
 - florincoin
 - megacoin
-- groestlcoin
-- waves community token
-- dubaicoin
+- sphere
 - gambit
 - belacoin
-- pascal coin
 - creditbit
-- e-currency coin
-- aeon
-- jinn
 - unobtanium
-- okcash
-- safe exchange coin
+- muse
 - zencash
 - nautiluscoin
-- muse
-- maxcoin
-- zetacoin
-- lunyr
+- okcash
 - solarcoin
-- circuits of value
+- lunyr
+- maxcoin
 - musicoin
-- diamond
+- zetacoin
 - raiblocks
-- pinkcoin
 - bitland
-- mediterraneancoin
-- zccoin
-- bitusd
+- pinkcoin
+- diamond
+- rise
 - digitalcoin
+- roulettetoken
+- riecoin
+- blitzcash
+- atmos
 - artbyte
 - bitbean
-- rise
-- riecoin
-- spectrecoin
-- roulettetoken
-- blitzcash
 - vcash
-- atmos
 - boostcoin
-- darcrus
+- spectrecoin
 - tagcoin
-- global currency reserve
 - bankcoin
 - incent
 - auroracoin
-- janus
-- ico openledger
-- sequence
 - bitsend
 - curecoin
-- apx
-- putincoin
 - anoncoin
-- veriumreserve
-- myriad
 - boolberry
-- steem dollars
-- ethereum movie venture
+- myriad
+- sequence
 - goldcoin
-- zeitcoin
-- synergy
 - triggers
-- inpay
+- synergy
 - securecoin
-- project decorum
-- legends room
-- nolimitcoin
 - icash
+- inpay
+- nolimitcoin
+- zeitcoin
+- breakout
+- bitmark
 - korecoin
 - minereum
-- bitmark
-- breakout
-- zennies
 - xcurrency
 - zclassic
 - mintcoin
-- bata
-- stealthcoin
 - huntercoin
 - visio
+- bata
 - bitswift
-- breakout stake
 - cannabiscoin
-- hush
 - blockpay
-- idice
-- qwark
+- hush
 - vtorrent
-- dopecoin
+- qwark
 - altcoin
-- 1337
+- dopecoin
 - europecoin
-- funcoin
+- evergreencoin
 - fedoracoin
+- geocoin
+- funcoin
+- transfercoin
 - insanecoin
 - tickets
-- geocoin
-- transfercoin
-- hempcoin
-- adelphoi
-- creativecoin
-- wild beast block
-- startcoin
-- 2give
-- evergreencoin
-- octanox
 - cryptocarbon
-- adzcoin
-- audiocoin
 - exclusivecoin
+- startcoin
+- audiocoin
+- creativecoin
 - trustplus
-- htmlcoin
-- virtacoinplus
 - mercury
 - whitecoin
-- dimecoin
-- insanecoin
-- renos
-- ixcoin
-- pesetacoin
-- bittokens
+- virtacoinplus
 - dynamic
-- posw coin
+- renos
+- bittokens
 - hyperstake
-- hacker gold
-- xp
-- ripto bux
-- pepecoin
-- bitz
-- dotcoin
-- tilecoin
-- voise
-- btsr
-- syndicate
+- dimecoin
 - nushares
-- equitrader
-- e-gulden
+- pepecoin
+- dotcoin
+- syndicate
 - parkbyte
+- tilecoin
+- equitrader
 - yashcoin
-- chaincoin
 - pandacoin
 - cagecoin
-- magi
 - fujicoin
-- litedoge
 - sexcoin
+- chaincoin
 - bitbar
-- trollcoin
 - tokes
 - crave
-- incakoin
-- dt token
-- influxcoin
 - globalcoin
-- bytecent
+- influxcoin
 - hicoin
+- britcoin
 - fastcoin
-- terracoin
 - unitus
 - centurion
-- britcoin
-- bluecoin
 - gcoin
-- iticoin
+- bluecoin
 - yocoin
-- moin
-- karbowanec
-- netko
 - dinastycoin
-- colossuscoin v2
-- hitcoin
+- netko
 - capricoin
+- hitcoin
+- ecocoin
 - piggycoin
 - unbreakablecoin
-- bunnycoin
-- ecocoin
 - fantomcoin
+- bunnycoin
 - procurrency
-- deutsche emark
 - noblecoin
 - veros
 - litebar
-- mazacoin
 - postcoin
-- emerald crypto
-- crypto bullion
 - trumpcoin
-- 42-coin
-- helleniccoin
-- ufo coin
-- atomic coin
+- mazacoin
+- smartcoin
 - zoin
-- goldblocks
 - netcoin
-- arcticcoin
-- chncoin
-- allsafe
-- pascal lite
 - supercoin
 - zero
 - bitcore
 - veltor
-- bitbtc
-- lottocoin
-- bitcoin planet
 - francs
-- condensate
-- nubits
-- deepwebcash
-- dibcoin
-- footy cash
-- torcoin
-- elcoin
-- quatloo
 - digitalprice
 - wavesgo
-- kurrent
-- bitsilver
-- socialcoin
-- sumokoin
-- eternity
-- globaltoken
-- vsync
-- marijuanacoin
-- 8bit
-- phoenixcoin
-- neuro
+- nubits
+- dibcoin
 - lanacoin
-- coin2.1
+- bitsilver
+- torcoin
+- neuro
 - bitgold
-- biteur
-- c-bit
+- eternity
 - unify
-- globalboost-y
-- gpu coin
-- prototanium
-- jin coin
-- tittiecoin
+- electra
 - uniburst
 - bolivarcoin
-- ohm wallet
-- linx
-- electra
-- healthywormcoin
 - spacecoin
-- master swiscoin
-- gbcgoldcoin
-- kingn coin
-- thegcccoin
 - solaris
-- mojocoin
-- goldpieces
-- ride my car
-- ammo rewards
-- catcoin
-- platinumbar
-- abncoin
-- kittehcoin
-- freicoin
-- crevacoin
-- pulse
-- compucoin
-- debitcoin
 - honey
-- levoplus
-- onix
-- zayedcoin
-- litecred
-- denarius
-- bnrtxcoin
+- catcoin
+- socialcoin
+- pulse
+- debitcoin
 - jewels
 - rawcoin
-- osmiumcoin
-- elysium
-- pizzacoin
 - enigma
-- digital money bits
 - swaptoken
-- good karma
-- instantdex
-- bitpark coin
 - scotcoin
-- arcade token
-- pangea poker
-- fimkrypto
-- eb3 coin
 - sprouts
 - asiacoin
 - cryptofund
 - smileycoin
 - carboncoin
-- ultimate secure cash
 - cryptoforecast
-- cryptcoin
-- tao
-- canada ecoin
 - devcoin
 - teslacoin
-- russiacoin
-- miners' reward token
 - woodcoin
 - dashcoin
 - version
-- newyorkcoin
+- russiacoin
 - kilocoin
-- the cypherfunks
 - greencoin
 - casino
 - shadowcash
-- rare pepe party
 - happycoin
 - shorty
-- kobocoin
-- i0coin
-- orbitcoin
-- titcoin
-- reecoin
-- btctalkcoin
-- smartcoin
-- bitcointx
 - metalcoin
-- pesobit
 - elementrem
-- martexcoin
-- joincoin
 - fuelcoin
 - universe
 - bitstar
 - neutron
-- nyancoin
-- hodlcoin
+- joincoin
 - triangles
-- rubies
 - swagbucks
-- paycoin
 - ultracoin
-- agrolifecoin
+- paycoin
 - swing
-- newbium
-- mtmgaming
-- mineum
 - qubitcoin
 - ambercoin
-- coin(o)
-- wyvern
 - asiadigicoin
-- tristar coin
-- cannacoin
-- hobonickels
-- stress
-- xiaomicoin
-- sterlingcoin
-- prcoin
-- flycoin
-- tekcoin
-- fluttercoin
-- putin classic
 - kibicoin
+- stress
+- sterlingcoin
+- flycoin
 - truckcoin
 - corgicoin
 - pipcoin
-- pakcoin
-- gaia
-- purevidz
-- gameunits
-- casinocoin
+- fluttercoin
 - berncash
-- rimbit
+- casinocoin
 - goldreserve
+- rimbit
 - hempcoin
-- aurumcoin
-- cryptojacks
 - bitcurrency
-- bottlecaps
-- petrodollar
-- aidos kuneen
+- gameunits
 - digicube
-- yacoin
-- universal currency
 - popularcoin
-- quazarcoin
 - guncoin
 - machinecoin
 - ratecoin
-- cachecoin
 - octocoin
-- chesscoin
 - darsek
-- 808coin
-- allion
+- chesscoin
 - parallelcoin
-- evotion
-- sativacoin
-- piecoin
 - bigup
+- piecoin
 - redcoin
 - unicoin
+- prototanium
 - wayguide
-- valorbit
-- franko
-- icobid
-- firecoin
-- bitzeny
-- sproutsextreme
 - tigercoin
-- billarycoin
-- ccminer
-- anarchistsprime
+- firecoin
 - blakecoin
-- philosopher stones
 - revolvercoin
-- coexistcoin
-- independent money system
 - bitcloud
-- joulecoin
 - virtacoin
-- aricoin
-- vault coin
-- chronos
-- cannation
 - dreamcoin
 - dollarcoin
-- flavorcoin
-- kushcoin
-- zetamicron
 - photon
-- acoin
-- eryllium
 - gapcoin
 - cypher
 - milocoin
 - grantcoin
 - aquariuscoin
-- digital rupees
-- hexx
-- satoshimadness
-- halcyon
-- artex coin
 - bumbacoin
-- px
-- wexcoin
-- wmcoin
 - spots
-- bitcoin 21
-- argentum
-- blazecoin
-- evil coin
-- cryptoescudo
 - vector
-- paycon
-- prime-xi
-- tajcoin
 - nevacoin
-- dobbscoin
 - virtualcoin
 - macron
-- burstocean
-- ponzicoin
 - mindcoin
-- metal music coin
-- b3coin
 - amsterdamcoin
-- bioscrypto
 - beavercoin
 - alexium
-- ronpaulcoin
-- dollar online
-- x-coin
-- creatio
+- printerium
 - mustangcoin
-- unrealcoin
 - sooncoin
 - ucoin
 - sling
-- money
-- revenu
 - eurocoin
-- leacoin
-- luna coin
 - cashcoin
 - antibitcoin
 - songcoin
-- arbit
-- lex4all
-- printerium
-- uro
-- solarflarecoin
 - destiny
 - crypto
 - zurcoin
 - steps
-- islacoin
-- bipcoin
-- speedcash
-- comet
-- sixeleven
 - impact
-- bitquark
-- orlycoin
-- cryptoworldx token
 - secretcoin
-- ltbcoin
 - vaperscoin
-- vip tokens
-- gamebet coin
 - blackstar
-- hirocoin
-- theresa may coin
-- guccionecoin
-- tagrcoin
-- beatcoin
-- g3n
-- ego
 - jobscoin
-- cabbage
-- coinonat
-- concoin
-- btcdragon
 - dappster
-- xonecoin
-- dpay
-- ibank
-- fuzzballs
 - impulsecoin
-- high voltage
-- flaxscript
-- 1credit
-- ebittree coin
 - argus
 - bowscoin
-- zonecoin
-- plncoin
 - scorecoin
-- crtcoin
-- iconic
-- 23 skidoo
-- letitride
-- ganjacoin
 - bitvolt
-- warp
-- shilling
-- benjirolls
-- jio token
-- dix asset
-- sydpak
-- environ
-- save and gain
 - californium
-- antilitecoin
-- biobar
-- posex
-- qibuck asset
-- impeachcoin
 - magnum
-- p7coin
 - nodecoin
-- geertcoin
-- future digital currency
 - selfiecoin
-- doubloon
-- ethbits
 - powercoin
-- caliphcoin
-- digital credits
-- zcashshare
-- xenixcoin
-- mikethemug
-- btcgold
-- gold pressed latinum
-- snakeeyes
-- project-x
-- sync
-- internet of things
 - amis
-- bitok
-- elcoin
-- malcoin
-- tenx (pre-launch)
-- goldunioncoin
-- qtum (pre-launch)
 - fargocoin
-- gxshares
-- ergo
-- metaverse entropy
-- eos
-- obits.warrant
-- internet of people
 - bitgem
 - prizm
-- remicoin
 - dynamiccoin
-- xde ii
-- techshares
-- teslacoilcoin
-- voyacoin
-- troptions
 - clubcoin
-- zilbercoin
-- stex
-- gay money
-- yogold
-- invisiblecoin
-- zengold
-- adex
-- qora
-- elacoin
-- alpacoin
-- golos gold
 - bitradio
-- eboost
-- chancoin
-- tychocoin
-- deuscoin
 - landcoin
-- encryptotel
-- wowecoin
-- president johnson
-- atc coin
-- emoneypower
-- omicron
-- wa space
 - cryptobuck
-- topaz coin
-- soarcoin
 - deltacredits
-- lepaoquan
-- adtoken
-- international diamond
-- royalcoin 2
-- shellpay
-- gycoin
-- sharkcoin
-- ivugeocoin
-- kolschcoin
-- dashs
-- edrcoin
-- digitalfund
-- goldpay coin
 - picoin
-- fazzcoin
-- eggcoin
-- xaucoin
-- mind gene
 - netbit
-- bitcoinfast
-- first bitcoin
-- pirate blocks
-- flash
-- opal
 - gulfcoin
-- zsecoin
-- bitcoin scrypt
-- rublebit
-- psilocybin
-- 9coin
+- flash
 - betacoin
 - axiom
-- tyrocoin
-- gameleaguecoin
-- president trump
-- mavro
-- quotient
-- bagcoin
-- advanced internet blocks
-- cthulhu offerings
 - avatarcoin
 - slimcoin
 - motocoin
-- clinton
-- ocow
-- trickycoin
 - richcoin
-- wearesatoshi
 - putincoin
-- mmxvi
-- sportscoin
-- ur
-- royalcoin
-- avoncoin
-- marscoin
-- bitcedi
-- skeincoin
-- digital bullion gold
-- vgina
-- neptune classic
 - bestchain
 - todaycoin
-- cubits
-- bitalphacoin
-- quebecoin
-- goldmaxcoin
-- true investment coin
-- kashhcoin
-- shacoin
-- rhfcoin
-- lazaruscoin
-- ugain
 - braincoin
-- cbd crystals
-- donationcoin
-- the aladin
-- opescoin
-- frankywillcoin
-- gambleo
-- huncoin
 - cheapcoin
 - blazercoin
 - dubstep
 - irishcoin
 - operand
-- darklisk
 - moneycoin
-- cycling coin
 - teracoin
-- t-coin
 - mobilecash
-- the vegan initiative
-- prismchain
-- happy creator coin
-- marxcoin
-- sakuracoin
-- asiccoin
 - vegascoin
-- moneta
-- grumfork
-- lathaan
-- thecreed
-- safe trade coin
+- turbocoin
 - animecoin
 - linkedcoin
-- turbocoin
 - safecoin
 - pokecoin
 - pinkdog
-- tellurion
-- antimatter
-- x2
-- teamup
-- halloween coin
-- kayi
 - inflationcoin
-- president sanders
-- lepen
 - fireflycoin
 - cybercoin
-- cashme
-- paypeer
 - wowcoin
-- bongger
-- fedorashare
-- president clinton
-- global business revolution
-- quartz
+- cashme
 - karmacoin
 - microcoin
 - uncoin
-- superturbostake
 - soulcoin
-- aces
 - golfcoin
-- victoriouscoin
-- rcoin
-- coupecoin
-- bitcentavo
 - yescoin
 - rabbitcoin
 - batcoin
-- stronghands
-- paccoin
 - bond
 - alphabit
-- miyucoin
