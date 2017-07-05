@@ -68,6 +68,8 @@ public class RestClient {
             disconnect();
         }
 
+        log.info("restResponse: {}", response.toString());
+
         return response.toString();
     }
 
