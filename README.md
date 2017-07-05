@@ -2,7 +2,7 @@
 
 ## Description
 This Amazon Alexa Skill is able to provide you the current price of over 450+ crypto currencies.
-All the price information is pulled from [CoinMarketCap.com](http://coinmarketcap.com) REST API.
+All the price information is pulled from [CoinMarketCap.com](http://coinmarketcap.com) REST API where prices update every 5 minutes.
 
 ## Usage
     User: "Alexa, ask crypto mate how much is bitcoin"
