@@ -25,6 +25,9 @@ public class RestClient {
     }
 
     public String get(String id) {
+
+        String restResponse = null;
+
         try {
             String fullUrl = getBaseUrl() + id;
             URL url = new URL(fullUrl);
@@ -37,40 +40,31 @@ public class RestClient {
             if (conn.getResponseCode() != 200) {
                 throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
             }
+            else {
+                StringBuilder response = new StringBuilder();
+
+                BufferedReader br = new BufferedReader(new InputStreamReader(
+                        (conn.getInputStream())));
+
+                String output;
+
+                while ((output = br.readLine()) != null) {
+                    response.append(output);
+                }
+
+                restResponse = response.toString();
+                log.info("restResponse: {}", restResponse);
+            }
         }
-        catch (IOException e) {
+        catch (Exception e) {
             log.error("Error while firing up the REST call: {}", e.getMessage());
             disconnect();
         }
-
-        return call();
-    }
-
-    private String call() {
-
-        StringBuilder response = new StringBuilder();
-
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(
-                    (conn.getInputStream())));
-
-            String output;
-
-            while ((output = br.readLine()) != null) {
-                response.append(output);
-            }
-
-            disconnect();
-
-        } catch (IOException e) {
-            log.error("Error when reading REST reply: {}", e.getMessage());
-        } finally {
+        finally {
             disconnect();
         }
 
-        log.info("restResponse: {}", response.toString());
-
-        return response.toString();
+        return restResponse;
     }
 
     private void disconnect() {
