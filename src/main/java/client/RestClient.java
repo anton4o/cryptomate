@@ -20,7 +20,7 @@ public class RestClient {
         this.baseUrl = url;
     }
 
-    public String getBaseUrl() {
+    private String getBaseUrl() {
         return this.baseUrl;
     }
 
@@ -46,7 +46,7 @@ public class RestClient {
         return call();
     }
 
-    public String call() {
+    private String call() {
 
         StringBuilder response = new StringBuilder();
 
@@ -73,7 +73,7 @@ public class RestClient {
         return response.toString();
     }
 
-    public void disconnect() {
+    private void disconnect() {
         if (conn != null) {
             conn.disconnect();
             conn = null;

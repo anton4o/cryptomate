@@ -13,7 +13,7 @@ public class Currency {
 
     @JsonProperty("id")
     public String getId() {
-        return id;
+        return this.id;
     }
 
     @JsonProperty("symbol")
@@ -27,7 +27,5 @@ public class Currency {
     }
 
     @JsonProperty("price_usd")
-    public Double getPrice() {
-        return this.price;
-    }
+    public Double getPrice() { return this.price; }
 }
