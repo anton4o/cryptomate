@@ -30,20 +30,4 @@ public class Currency {
     public Double getPrice() {
         return this.price;
     }
-
-    public void setTicker(String ticker) {
-        this.ticker = ticker;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 }

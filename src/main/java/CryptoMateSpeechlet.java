@@ -64,18 +64,25 @@ public class CryptoMateSpeechlet implements Speechlet {
 
         if (ccy == null) {
             reply = "Sorry, I did not understand the currency name";
-        } else {
+        }
+        else {
             RestClient client = new RestClient(REST_BASE_URL);
             JSONParser parser = new JSONParser();
 
             String response = client.get(ccy);
             Currency parsedCcy = parser.parse(response);
 
-            reply = String.format("The current price of %s is %s dollars",
-                    parsedCcy.getName(),
-                    parsedCcy.getPrice());
+            if (parsedCcy != null) {
+                reply = String.format("The current price of %s is %s dollars",
+                        parsedCcy.getName(),
+                        parsedCcy.getPrice());
+            }
+            else {
+                reply = "Sorry, I could not get the price you asked for at the moment.";
+            }
         }
 
+        log.info("priceResponse: {}", reply);
 
         SimpleCard card = new SimpleCard();
         card.setTitle("CryptoMate");
@@ -110,6 +117,8 @@ public class CryptoMateSpeechlet implements Speechlet {
         Reprompt reprompt = new Reprompt();
         reprompt.setOutputSpeech(speechReprompt);
 
+        log.info("welcomeResponse");
+
         return SpeechletResponse.newAskResponse(speech, reprompt, card);
     }
 
@@ -134,12 +143,15 @@ public class CryptoMateSpeechlet implements Speechlet {
         Reprompt reprompt = new Reprompt();
         reprompt.setOutputSpeech(speechReprompt);
 
+        log.info("helpResponse");
+
         return SpeechletResponse.newAskResponse(speech, reprompt, card);
     }
 
     private SpeechletResponse getExitResponse() {
         PlainTextOutputSpeech outputSpeech = new PlainTextOutputSpeech();
         outputSpeech.setText("OK, bye");
+        log.info("exitResponse");
 
         return SpeechletResponse.newTellResponse(outputSpeech);
     }

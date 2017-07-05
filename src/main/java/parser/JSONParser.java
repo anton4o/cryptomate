@@ -24,15 +24,23 @@ public class JSONParser {
 
         Currency ccy = null;
 
-        try {
-            TypeReference<List<Currency>> typeRef = new TypeReference<List<Currency>>() { };
-            List<Currency> ccyList = mapper.readValue(json, typeRef);
+        if (json != null) {
 
-            if (!ccyList.isEmpty()) {
-                ccy = ccyList.get(0);
+            try {
+                TypeReference<List<Currency>> typeRef = new TypeReference<List<Currency>>() {
+                };
+                List<Currency> ccyList = mapper.readValue(json, typeRef);
+
+                if (!ccyList.isEmpty()) {
+                    ccy = ccyList.get(0);
+                }
+            } catch (IOException e) {
+                log.error("Error while parsing JSON object: {}", e.getMessage());
             }
-        } catch (IOException e) {
-            log.error("Error when parsing JSON object: {}", e.getMessage());
+
+            if (ccy != null) {
+                log.info("parsedCcy: {}, {}", ccy.getName(), ccy.getPrice());
+            }
         }
 
         return ccy;
