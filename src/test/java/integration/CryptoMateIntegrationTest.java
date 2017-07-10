@@ -6,6 +6,7 @@ import model.Currency;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import parser.JSONParser;
+import util.CryptoMateUtils;
 
 public class CryptoMateIntegrationTest extends TestCase {
 
@@ -19,7 +20,9 @@ public class CryptoMateIntegrationTest extends TestCase {
     }
 
     public void testCryptoMate() {
-        String response = client.get("bitcoin");
+        String ccyInput = CryptoMateUtils.getCurrencyName("zero");
+
+        String response = client.get(ccyInput);
         Currency ccy = parser.parse(response);
 
         log.info("id: " + ccy.getId() +

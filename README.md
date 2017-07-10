@@ -1,7 +1,7 @@
 # CryptoMate - crypto currency prices and information
 
 ## Description
-This Amazon Alexa Skill is able to provide you the current price of over 450+ crypto currencies.
+This Amazon Alexa Skill is able to provide you the current price of over 400+ crypto currencies.
 All the price information is pulled from [CoinMarketCap.com](http://coinmarketcap.com) REST API where prices update every 5 minutes.
 
 ## Usage
@@ -26,11 +26,9 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - bitshares
 - zcash
 - antshares
-- bytecoin
 - golem
 - steem
 - waves
-- gnosis
 - bitconnect
 - siacoin
 - iconomi
@@ -64,7 +62,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - asch
 - cloakcoin
 - melon
-- peerplays
 - verge
 - namecoin
 - synereo
@@ -88,7 +85,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - quantum
 - earthcoin
 - gridcoin
-- supernet
 - potcoin
 - dubaicoin
 - luckchain
@@ -103,13 +99,11 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - shift
 - nexium
 - energycoin
-- matchpool
 - novacoin
 - databits
 - digitalnote
 - monetaryunit
 - chronobank
-- heat
 - infinitecoin
 - faircoin
 - voxels
@@ -142,7 +136,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - belacoin
 - creditbit
 - unobtanium
-- muse
 - zencash
 - nautiluscoin
 - okcash
@@ -161,7 +154,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - riecoin
 - blitzcash
 - atmos
-- artbyte
 - bitbean
 - vcash
 - boostcoin
@@ -200,7 +192,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - hush
 - vtorrent
 - qwark
-- altcoin
 - dopecoin
 - europecoin
 - evergreencoin
@@ -208,7 +199,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - geocoin
 - funcoin
 - transfercoin
-- insanecoin
 - tickets
 - cryptocarbon
 - exclusivecoin
@@ -225,14 +215,12 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - hyperstake
 - dimecoin
 - nushares
-- pepecoin
 - dotcoin
 - syndicate
 - parkbyte
 - tilecoin
 - equitrader
 - yashcoin
-- pandacoin
 - cagecoin
 - fujicoin
 - sexcoin
@@ -270,7 +258,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - zoin
 - netcoin
 - supercoin
-- zero
 - bitcore
 - veltor
 - francs
@@ -280,7 +267,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - dibcoin
 - lanacoin
 - bitsilver
-- torcoin
 - neuro
 - bitgold
 - eternity
@@ -292,11 +278,9 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - solaris
 - honey
 - catcoin
-- socialcoin
 - pulse
 - debitcoin
 - jewels
-- rawcoin
 - enigma
 - swaptoken
 - scotcoin
@@ -328,7 +312,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - triangles
 - swagbucks
 - ultracoin
-- paycoin
 - swing
 - qubitcoin
 - ambercoin
@@ -345,7 +328,6 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - casinocoin
 - goldreserve
 - rimbit
-- hempcoin
 - bitcurrency
 - gameunits
 - digicube
@@ -469,4 +451,3 @@ All the price information is pulled from [CoinMarketCap.com](http://coinmarketca
 - rabbitcoin
 - batcoin
 - bond
-- alphabit
