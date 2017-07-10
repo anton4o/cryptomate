@@ -38,7 +38,9 @@ public class RestClient {
             conn.setRequestProperty("Accept", "application/json");
 
             if (conn.getResponseCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
+                throw new RuntimeException("Failed HTTP request for : " + fullUrl +
+                        " HTTP error code : " + conn.getResponseCode() +
+                        " HTTP response : " + conn.getResponseMessage());
             }
             else {
                 StringBuilder response = new StringBuilder();
