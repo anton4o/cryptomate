@@ -14,4 +14,12 @@ public class CryptoMateUtilsTest extends TestCase {
 
         assertEquals(null, CryptoMateUtils.getCurrencyName(""));
     }
+
+    public void testSupportedCcys() {
+        CryptoMateUtils utils = new CryptoMateUtils();
+
+        assertEquals(435, utils.getSupportedCcys().size());
+        assertTrue(utils.isSupported("bitcoin"));
+        assertFalse(utils.isSupported("lev"));
+    }
 }

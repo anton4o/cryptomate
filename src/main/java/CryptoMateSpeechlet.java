@@ -60,10 +60,14 @@ public class CryptoMateSpeechlet implements Speechlet {
 
     private SpeechletResponse getPriceResponse(final Intent intent) {
         String reply;
+        CryptoMateUtils utils = new CryptoMateUtils();
         String ccy = CryptoMateUtils.getCurrencyName(intent.getSlot(SLOT_CURRENCY_NAME).getValue());
 
         if (ccy == null) {
             reply = "Sorry, I did not understand the currency name";
+        }
+        else if (!utils.isSupported(ccy)) {
+            reply = "Sorry, I do not support the currency " + ccy;
         }
         else {
             RestClient client = new RestClient(REST_BASE_URL);
