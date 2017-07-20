@@ -29,7 +29,7 @@ public class CryptoMateUtils {
         try {
             br = new BufferedReader(new FileReader(file));
             while ((line = br.readLine()) != null) {
-                supportedCcys.add(line);
+                supportedCcys.add(validateCurrencyName(line));
             }
         }
         catch (IOException e) {
@@ -57,17 +57,20 @@ public class CryptoMateUtils {
 
     public static String getCurrencyName(String ccyInput) {
         log.info("ccyInput: {}", ccyInput);
+        return validateCurrencyName(ccyInput);
+    }
 
-        if (ccyInput == null || ccyInput.isEmpty()) {
+    private static String validateCurrencyName(String ccy) {
+        if (ccy == null || ccy.isEmpty()) {
             return null;
         }
 
         String validCcy;
 
-        if (ccyInput.contains(" ")) {
-            validCcy = ccyInput.replaceAll("\\s", "-");
+        if (ccy.contains(" ")) {
+            validCcy = ccy.replaceAll("\\s", "-");
         } else {
-            validCcy = ccyInput;
+            validCcy = ccy;
         }
 
         return validCcy.toLowerCase();

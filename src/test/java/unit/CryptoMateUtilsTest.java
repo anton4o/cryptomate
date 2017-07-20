@@ -21,5 +21,7 @@ public class CryptoMateUtilsTest extends TestCase {
         assertEquals(435, utils.getSupportedCcys().size());
         assertTrue(utils.isSupported("bitcoin"));
         assertFalse(utils.isSupported("lev"));
+        assertTrue(utils.isSupported("ethereum-classic"));
+        assertFalse(utils.isSupported("ethereum classic"));
     }
 }
