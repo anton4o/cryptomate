@@ -2,7 +2,7 @@ package integration;
 
 import client.RestClient;
 import junit.framework.*;
-import model.Currency;
+import model.CurrencyPriceResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import parser.JSONParser;
@@ -23,7 +23,7 @@ public class CryptoMateIntegrationTest extends TestCase {
         String ccyInput = CryptoMateUtils.getCurrencyName("zero");
 
         String response = client.get(ccyInput);
-        Currency ccy = parser.parse(response);
+        CurrencyPriceResponse ccy = parser.parse(response);
 
         log.info("id: " + ccy.getId() +
                 " ticker: " + ccy.getTicker() +

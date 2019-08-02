@@ -2,7 +2,7 @@ package parser;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.Currency;
+import model.CurrencyPriceResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,16 +20,16 @@ public class JSONParser {
         this.mapper = new ObjectMapper();
     }
 
-    public Currency parse(String json) {
+    public CurrencyPriceResponse parse(String json) {
 
-        Currency ccy = null;
+        CurrencyPriceResponse ccy = null;
 
         if (json != null) {
 
             try {
-                TypeReference<List<Currency>> typeRef = new TypeReference<List<Currency>>() {
+                TypeReference<List<CurrencyPriceResponse>> typeRef = new TypeReference<List<CurrencyPriceResponse>>() {
                 };
-                List<Currency> ccyList = mapper.readValue(json, typeRef);
+                List<CurrencyPriceResponse> ccyList = mapper.readValue(json, typeRef);
 
                 if (!ccyList.isEmpty()) {
                     ccy = ccyList.get(0);
@@ -46,12 +46,12 @@ public class JSONParser {
         return ccy;
     }
 
-    public List<Currency> parseAll(String json) {
-        List<Currency> allCurrencies = new ArrayList<>();
+    public List<CurrencyPriceResponse> parseAll(String json) {
+        List<CurrencyPriceResponse> allCurrencies = new ArrayList<>();
 
         try {
-            TypeReference<List<Currency>> typeRef = new TypeReference<List<Currency>>() { };
-            List<Currency> ccyList = mapper.readValue(json, typeRef);
+            TypeReference<List<CurrencyPriceResponse>> typeRef = new TypeReference<List<CurrencyPriceResponse>>() { };
+            List<CurrencyPriceResponse> ccyList = mapper.readValue(json, typeRef);
 
             if (!ccyList.isEmpty()) {
                 allCurrencies = ccyList;

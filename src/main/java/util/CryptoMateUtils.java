@@ -10,6 +10,7 @@ import java.util.List;
 public class CryptoMateUtils {
 
     private static final Logger log = LoggerFactory.getLogger(CryptoMateUtils.class);
+    private static final String ccyFilePath = "speechAssets/customSlotTypes/LIST_OF_CURRENCIES";
 
     private List<String> supportedCcys = new ArrayList<>();
 
@@ -18,10 +19,8 @@ public class CryptoMateUtils {
     }
 
     private void parseSupportedCcys() {
-        String filePath = "speechAssets/customSlotTypes/LIST_OF_CURRENCIES";
-
         ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource(filePath).getFile());
+        File file = new File(classLoader.getResource(ccyFilePath).getFile());
 
         String line;
         BufferedReader br = null;

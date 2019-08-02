@@ -3,7 +3,7 @@ package manual;
 
 import client.RestClient;
 import junit.framework.*;
-import model.Currency;
+import model.CurrencyPriceResponse;
 import parser.JSONParser;
 
 import java.util.List;
@@ -16,7 +16,7 @@ public class APITest extends TestCase {
         JSONParser parser = new JSONParser();
 
         String response = client.get("");
-        List<Currency> allCurrencies = parser.parseAll(response);
+        List<CurrencyPriceResponse> allCurrencies = parser.parseAll(response);
 
         List<String> allNames = allCurrencies
                 .stream()
@@ -31,7 +31,7 @@ public class APITest extends TestCase {
         JSONParser parser = new JSONParser();
 
         String response = client.get("");
-        List<Currency> allCurrencies = parser.parseAll(response);
+        List<CurrencyPriceResponse> allCurrencies = parser.parseAll(response);
 
         List<String> allDiffs = allCurrencies
                 .stream()

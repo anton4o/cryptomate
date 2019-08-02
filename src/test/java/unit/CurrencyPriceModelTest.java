@@ -1,11 +1,13 @@
 package unit;
 
-
 import junit.framework.TestCase;
+import model.CurrencyPriceModel;
 import model.CurrencyPriceResponse;
 import parser.JSONParser;
 
-public class JSONParserTest extends TestCase {
+import java.math.BigDecimal;
+
+public class CurrencyPriceModelTest extends TestCase  {
 
     private JSONParser parser;
 
@@ -15,7 +17,7 @@ public class JSONParserTest extends TestCase {
             "        \"name\": \"Bitcoin\", \n" +
             "        \"symbol\": \"BTC\", \n" +
             "        \"rank\": \"1\", \n" +
-            "        \"price_usd\": \"2598.25\", \n" +
+            "        \"price_usd\": \"2598.212345235\", \n" +
             "        \"price_btc\": \"1.0\", \n" +
             "        \"24h_volume_usd\": \"951519000.0\", \n" +
             "        \"market_cap_usd\": \"42689083810.0\", \n" +
@@ -32,21 +34,16 @@ public class JSONParserTest extends TestCase {
         parser = new JSONParser();
     }
 
-    public void testParseSuccessful() {
+    public void testCorrectInstantiation() {
         CurrencyPriceResponse parsed = parser.parse(validJson);
+        CurrencyPriceModel model = new CurrencyPriceModel(parsed);
 
-        assertNotNull(parsed);
-        assertEquals("Bitcoin", parsed.getName());
-        assertEquals(2598.25, parsed.getPrice());
+        BigDecimal expectedPrice = new BigDecimal(2598.212).setScale(3, BigDecimal.ROUND_HALF_UP);
+
+        assertNotNull(model);
+        assertEquals("Bitcoin", model.getName());
+        assertEquals(expectedPrice, model.getPrice());
         assertEquals(42689083810.0, parsed.getMarketCap());
         assertEquals(0.6, parsed.getPctChange24h());
-    }
-
-    public void testParseUnsuccessful() {
-        assertNull(parser.parse(""));
-    }
-
-    public void testParseNull() {
-        assertNull(parser.parse(null));
     }
 }
