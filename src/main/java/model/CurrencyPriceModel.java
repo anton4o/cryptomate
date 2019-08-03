@@ -36,12 +36,11 @@ public class CurrencyPriceModel {
 
     public BigDecimal getPrice() { return this.price; }
 
-    //TODO: implement marketCap and PctChange Intents
     public Double getMarketCap() { return this.marketCap; }
 
     public Double getPctChange24h() { return this.pctChange24h; }
 
-    public static BigDecimal formatPrice(Double price) {
+    private static BigDecimal formatPrice(Double price) {
         return BigDecimal.valueOf(price).setScale(3, BigDecimal.ROUND_HALF_UP);
     }
 }
