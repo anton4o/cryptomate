@@ -93,8 +93,8 @@ public class CryptoMateSpeechlet implements Speechlet {
             }
         }
 
-        Duration latency = Duration.between(start , Instant.now());
-        log.info("priceResponse in {} sec : {}", latency.getSeconds(), reply);
+        long latency = Duration.between(start , Instant.now()).toMillis();
+        log.info("priceResponse in {} ms : {}", latency, reply);
 
         SimpleCard card = new SimpleCard();
         card.setTitle("CryptoMate");
