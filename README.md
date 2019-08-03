@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/anton4o/cryptomate/master/assets/cryptomate_logo.png)
+
 # CryptoMate - crypto currency prices and information
 
 ## Description
